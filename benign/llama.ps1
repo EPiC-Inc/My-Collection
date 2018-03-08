@@ -1,2 +1,4 @@
 $speaker = New-Object -ComObject SAPI.SPVoice;
-$speaker.Speak("I'M A LLAMA");$speaker.Speak("I'M A LLAMA");$speaker.Speak("I'M A LLAMA");$speaker.Speak("I'M A LLAMA");$speaker.Speak("I'M A LLAMA");$speaker.Speak("I'M A LLAMA");$speaker.Speak("I'M A LLAMA");$speaker.Speak("I'M A LLAMA");$speaker.Speak("I'M A LLAMA");$speaker.Speak("I'M A LLAMA");$speaker.Speak("I'M A LLAMA");$speaker.Speak("I'M A LLAMA");$speaker.Speak("I'M A LLAMA");$speaker.Speak("I'M A LLAMA");$speaker.Speak("I'M A LLAMA");
+while ($true) {
+  $speaker.Speak("I'M A LAMA");
+}
