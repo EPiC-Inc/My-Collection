@@ -1,4 +1,4 @@
-# Extracted from https://hinchley.net/2013/11/03/creating-a-key-logger-via-a-global-system-hook-using-powershell/
+# Extracted from this site: https://hinchley.net/2013/11/03/creating-a-key-logger-via-a-global-system-hook-using-powershell/
 Add-Type -TypeDefinition @"
 using System;
 using System.IO;
