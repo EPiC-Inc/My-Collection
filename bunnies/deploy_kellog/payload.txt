@@ -1,18 +1,24 @@
-# Title:         Kellog Deployer
-# Description:   Pulls and deploys kellog.ps1, exfiltrates dumped data
-# Author:        EPiC_Inc
-# Props:         [empty]
-# Version:       0.1
-# Category:      Exfiltration
-# Target:        Windows XP SP3+ (Powershell)
-# Attackmodes:   HID
+# Title:        Kellog Deployer
+# Description:  Pulls and deploys kellog.ps1, exfiltrates dumped data
+#               <Need to leave bunny in>
+# Author:       EPiC_Inc
+# Props:        [empty]
+# Version:      0.1
+# Category:     Exfiltration
+# Target:       Windows XP SP3+ (Powershell)
+# Attackmodes:  HID
 
 # Setup bunny
 LED SETUP
+mkdir /loot/testing
+rm -rf /loot/testing/*
+echo test > /loot/testing/loot_test.txt
 ATTACKMODE HID
 
 # Payload deployment
 LED STAGE1
+# Download and execute kellog.ps1, preferably in memory without dropping to disk
+# Might have to clear powershell logs afterwards =[
 
 # Finished! Safe to unplug
 LED FINISH
