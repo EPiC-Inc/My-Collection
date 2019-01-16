@@ -1,0 +1,18 @@
+# Title:         Kellog Deployer
+# Description:   Pulls and deploys kellog.ps1, exfiltrates dumped data
+# Author:        EPiC_Inc
+# Props:         [empty]
+# Version:       0.1
+# Category:      Exfiltration
+# Target:        Windows XP SP3+ (Powershell)
+# Attackmodes:   HID
+
+# Setup bunny
+LED SETUP
+ATTACKMODE HID
+
+# Payload deployment
+LED STAGE1
+
+# Finished! Safe to unplug
+LED FINISH
