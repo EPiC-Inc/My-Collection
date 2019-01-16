@@ -59,4 +59,4 @@ namespace Kellog {
 }
 "@ -ReferencedAssemblies System.Windows.Forms
 
-#[Kellog.Program]::Main("U:\log.txt");
+[Kellog.Program]::Main("$env:temp\log.txt");
