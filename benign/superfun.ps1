@@ -173,4 +173,5 @@ Add-Type $pinvokeCode -ErrorAction SilentlyContinue
 }
 
 Set-ScreenResolutionAndOrientation
-} -psversion 2.0}
+} -psversion 2.0;
+sleep -s 3}
