@@ -1,5 +1,4 @@
-start-job {
-Function Set-ScreenResolutionAndOrientation { 
+while ($true) {start-job {Function Set-ScreenResolutionAndOrientation { 
 
 <# 
     .Synopsis 
@@ -172,9 +171,7 @@ namespace Resolution
 Add-Type $pinvokeCode -ErrorAction SilentlyContinue 
 [Resolution.PrmaryScreenResolution]::ChangeResolution() 
 }
-} -psversion 2.0;
-sleep -s 2;
-while ($true) {start-job {
+
 Set-ScreenResolutionAndOrientation
 } -psversion 2.0;
 sleep -s 1}
